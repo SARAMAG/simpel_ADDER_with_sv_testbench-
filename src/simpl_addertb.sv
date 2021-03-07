@@ -75,7 +75,7 @@ module simpleadder_directtb_driver ();
 				$display ("*****STARTS OF MONITOR OUTPUT @ %0d \t " ,$time ); 
 				   // 10 11 >> 101
 						
-				Temp_out<= out ;   // 1 
+				Temp_out = out ;   // 1 
 			  @(posedge clk);
 			  Temp_out = Temp_out <<1 ; // 10 
 			  Temp_out[0] = Temp_out[0] | out ; //10 
